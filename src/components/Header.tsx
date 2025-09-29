@@ -1,7 +1,19 @@
 export const Header = () => {
   return (
     <div>
-      <h1>HSS'Portfolio</h1>
+      <div>
+        <h1>HSH'Portfolio</h1>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li>About me</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Study</li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 };
