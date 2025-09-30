@@ -9,6 +9,7 @@ export const Header = () => {
           <ul>
             <li>About me</li>
             <li>Skills</li>
+            <li>Archiving</li>
             <li>Projects</li>
             <li>Study</li>
           </ul>
