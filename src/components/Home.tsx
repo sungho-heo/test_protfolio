@@ -1,12 +1,14 @@
 export const Home = () => {
   return (
     <div>
+      {/* 간단 자기소개 */}
       <div>
         <h1>- 허성호 -</h1>
         <br />
         <h1>프론트엔드 포트폴리오</h1>
         <h3>안녕하세요, 프론트엔드 개발자 허성호입니다.</h3>
       </div>
+      {/* About me */}
       <section>
         <div>
           <h1>About me</h1>
@@ -18,6 +20,7 @@ export const Home = () => {
           </ul>
         </div>
       </section>
+      {/* Skills */}
       <section>
         <div>
           <h1>Skills</h1>
@@ -53,6 +56,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      {/* Archiving */}
       <section>
         <div>
           <h1>Archiving</h1>
@@ -70,6 +74,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      {/* Projects */}
       <section>
         <div>
           <div>
@@ -109,6 +114,21 @@ export const Home = () => {
               <div>
                 <p>readme 들어갈곳</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Study */}
+      <section>
+        <div>
+          <h2>Study</h2>
+          <div>
+            <h4>학습한거1</h4>
+            <div>
+              <h5>대표적으로 설명할 간단 설명1</h5>
+              <ul>
+                <li>학습설명 1</li>
+              </ul>
             </div>
           </div>
         </div>
