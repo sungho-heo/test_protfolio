@@ -36,7 +36,6 @@ export const Home = () => {
             <ul>
               <li>React</li>
               <li>React-Query</li>
-              <li>Tailwind Css</li>
               <li>Vite</li>
               <li>Styled-Components</li>
             </ul>
