@@ -1,16 +1,26 @@
+import styles from "../scss/Home.module.scss";
 export const Home = () => {
   return (
-    <div>
+    <>
       {/* 간단 자기소개 */}
-      <div>
-        <h1>- 허성호 -</h1>
-        <br />
-        <h1>프론트엔드 포트폴리오</h1>
-        <h3>안녕하세요, 프론트엔드 개발자 허성호입니다.</h3>
+      <div className={styles.Centerhead_container}>
+        <div className={styles.Centerhead_content}>
+          <h1 className={styles.Centerhead_title}>
+            - 허성호 -
+            <br />
+            프론트 엔드 개발자 포트폴리오
+          </h1>
+          <hr className={styles.Centerhead_divide} />
+          <h3 className={styles.Centerhead_description}>
+            안녕하세요,
+            <br />
+            프론트엔드 개발자 허성호입니다.
+          </h3>
+        </div>
       </div>
       {/* About me */}
-      <section>
-        <div>
+      <section id="about-me" className={styles.Aboutme_section}>
+        <div className={styles.Aboutme_content}>
           <h1>About me</h1>
           <ul>
             <li>이름 허성호</li>
@@ -132,6 +142,6 @@ export const Home = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
