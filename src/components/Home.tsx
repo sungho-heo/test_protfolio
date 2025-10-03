@@ -1,4 +1,5 @@
 import styles from "../scss/Home.module.scss";
+import { Aboutme } from "./Aboutme";
 export const Home = () => {
   return (
     <>
@@ -19,17 +20,7 @@ export const Home = () => {
         </div>
       </div>
       {/* About me */}
-      <section id="about-me" className={styles.Aboutme_section}>
-        <div className={styles.Aboutme_content}>
-          <h1>About me</h1>
-          <ul>
-            <li>이름 허성호</li>
-            <li>생년월일 98.08.10</li>
-            <li>연락처 010-2319-4539</li>
-            <li>이메일 hurgj123kr@gmail.com</li>
-          </ul>
-        </div>
-      </section>
+      <Aboutme />
       {/* Skills */}
       <section>
         <div>

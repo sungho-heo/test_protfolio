@@ -1,0 +1,50 @@
+// Aboutme
+.Aboutme_section_about {
+}
+
+.Aboutme_content {
+  width: 100%;
+  max-width: 72rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+}
+
+.SectionTitle_content {
+  position: relative;
+  display: table;
+  margin: 0 auto 3rem;
+}
+
+.SectionTitle_title {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  border-bottom-width: 0.8px;
+  border-bottom-style: solid;
+  font-size: 3rem;
+}
+
+.Aboutme_infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 2rem;
+}
+
+.Aboutme_infos-list {
+  width: 50%;
+}
+
+.Aboutme_info {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 10rem;
+  margin: 0 auto;
+}
+
+.Aboutme_field-title {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
