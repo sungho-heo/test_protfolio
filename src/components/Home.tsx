@@ -1,18 +1,19 @@
-import styles from "../scss/Home.module.scss";
+import homeStyles from "../scss/Home.module.scss";
+import globalStyles from "../scss/styled.module.scss";
 import { Aboutme } from "./Aboutme";
 export const Home = () => {
   return (
     <>
       {/* 간단 자기소개 */}
-      <div className={styles.Centerhead_container}>
-        <div className={styles.Centerhead_content}>
-          <h1 className={styles.Centerhead_title}>
+      <div className={homeStyles.Centerhead_container}>
+        <div className={homeStyles.Centerhead_content}>
+          <h1 className={homeStyles.Centerhead_title}>
             - 허성호 -
             <br />
             프론트 엔드 개발자 포트폴리오
           </h1>
-          <hr className={styles.Centerhead_divide} />
-          <h3 className={styles.Centerhead_description}>
+          <hr className={homeStyles.Centerhead_divide} />
+          <h3 className={homeStyles.Centerhead_description}>
             안녕하세요,
             <br />
             프론트엔드 개발자 허성호입니다.
@@ -24,16 +25,18 @@ export const Home = () => {
       {/* Skills */}
       <section>
         <div>
-          <h1>Skills</h1>
+          <div className={globalStyles.SectionTitle_content}>
+            <h2 className={globalStyles.SectionTitle_title}>Skills</h2>
+          </div>
           <div>
-            <h2>Language</h2>
+            <h3>Language</h3>
             <ul>
               <li>TypeScript</li>
               <li>JavaScript</li>
             </ul>
           </div>
           <div>
-            <h2>Frontend</h2>
+            <h3>Frontend</h3>
             <ul>
               <li>React</li>
               <li>React-Query</li>
@@ -42,13 +45,13 @@ export const Home = () => {
             </ul>
           </div>
           <div>
-            <h2>Database</h2>
+            <h3>Database</h3>
             <ul>
               <li>Mongodb</li>
             </ul>
           </div>
           <div>
-            <h2>Tools & dev</h2>
+            <h3>Tools & dev</h3>
             <ul>
               <li>Vercel</li>
               <li>Github</li>
@@ -59,10 +62,12 @@ export const Home = () => {
       {/* Archiving */}
       <section>
         <div>
-          <h1>Archiving</h1>
+          <div className={globalStyles.SectionTitle_content}>
+            <h2 className={globalStyles.SectionTitle_title}>Archiving</h2>
+          </div>
           <div>
             <div>
-              <h1>Github</h1>
+              <h3>Github</h3>
             </div>
             <div>
               <p>
@@ -77,8 +82,8 @@ export const Home = () => {
       {/* Projects */}
       <section>
         <div>
-          <div>
-            <h1>Projects</h1>
+          <div className={globalStyles.SectionTitle_content}>
+            <h2 className={globalStyles.SectionTitle_title}>Projects</h2>
           </div>
           <div>
             <h3>Project1</h3>
@@ -121,7 +126,9 @@ export const Home = () => {
       {/* Study */}
       <section>
         <div>
-          <h2>Study</h2>
+          <div className={globalStyles.SectionTitle_content}>
+            <h2 className={globalStyles.SectionTitle_title}>Study</h2>
+          </div>
           <div>
             <h4>학습한거1</h4>
             <div>

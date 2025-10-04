@@ -1,26 +1,32 @@
-import styles from "../scss/Aboutme.module.scss";
+import aboutmeStyles from "../scss/Aboutme.module.scss";
+import globalStyles from "../scss/styled.module.scss";
 export const Aboutme = () => {
   return (
     <>
-      <section id="about-me" className={styles["Aboutme_section_about-me"]}>
-        <div className={styles.Aboutme_content}>
-          <div className={styles.SectionTitle_content}>
-            <h2 className={styles.SectionTitle_title}>ABOUT ME</h2>
+      <section
+        id="about-me"
+        className={aboutmeStyles["Aboutme_section_about-me"]}
+      >
+        <div className={aboutmeStyles.Aboutme_content}>
+          <div className={globalStyles.SectionTitle_content}>
+            <h2 className={globalStyles.SectionTitle_title}>ABOUT ME</h2>
           </div>
-          <div className={styles.Aboutme_infos}>
-            <div className={styles["Aboutme_infos-list"]}>
-              <div className={styles.Aboutme_info}>
-                <div className={styles.Aboutme_field}>
-                  <label className={styles["Aboutme_field-title"]}>이름</label>
+          <div className={aboutmeStyles.Aboutme_infos}>
+            <div className={aboutmeStyles["Aboutme_infos-list"]}>
+              <div className={aboutmeStyles.Aboutme_info}>
+                <div className={aboutmeStyles.Aboutme_field}>
+                  <label className={aboutmeStyles["Aboutme_field-title"]}>
+                    이름
+                  </label>
                   <br />
                   <span>허성호</span>
                 </div>
               </div>
             </div>
-            <div className={styles["Aboutme_infos-list"]}>
-              <div className={styles.Aboutme_info}>
-                <div className={styles.Aboutme_field}>
-                  <label className={styles["Aboutme_field-title"]}>
+            <div className={aboutmeStyles["Aboutme_infos-list"]}>
+              <div className={aboutmeStyles.Aboutme_info}>
+                <div className={aboutmeStyles.Aboutme_field}>
+                  <label className={aboutmeStyles["Aboutme_field-title"]}>
                     생년월일
                   </label>
                   <br />
@@ -28,10 +34,10 @@ export const Aboutme = () => {
                 </div>
               </div>
             </div>
-            <div className={styles["Aboutme_infos-list"]}>
-              <div className={styles.Aboutme_info}>
-                <div className={styles.Aboutme_field}>
-                  <label className={styles["Aboutme_field-title"]}>
+            <div className={aboutmeStyles["Aboutme_infos-list"]}>
+              <div className={aboutmeStyles.Aboutme_info}>
+                <div className={aboutmeStyles.Aboutme_field}>
+                  <label className={aboutmeStyles["Aboutme_field-title"]}>
                     연락처
                   </label>
                   <br />
@@ -39,10 +45,10 @@ export const Aboutme = () => {
                 </div>
               </div>
             </div>
-            <div className={styles["Aboutme_infos-list"]}>
-              <div className={styles.Aboutme_info}>
-                <div className={styles.Aboutme_field}>
-                  <label className={styles["Aboutme_field-title"]}>
+            <div className={aboutmeStyles["Aboutme_infos-list"]}>
+              <div className={aboutmeStyles.Aboutme_info}>
+                <div className={aboutmeStyles.Aboutme_field}>
+                  <label className={aboutmeStyles["Aboutme_field-title"]}>
                     이메일
                   </label>
                   <br />
