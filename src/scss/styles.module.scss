@@ -182,3 +182,13 @@
   border-bottom-style: solid;
   font-size: 3rem;
 }
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,5 +1,5 @@
 import homeStyles from "../scss/Home.module.scss";
-import globalStyles from "../scss/styled.module.scss";
+import globalStyles from "../scss/styles.module.scss";
 import { Aboutme } from "./Aboutme";
 export const Home = () => {
   return (
@@ -23,39 +23,99 @@ export const Home = () => {
       {/* About me */}
       <Aboutme />
       {/* Skills */}
-      <section>
-        <div>
+      <section id="skills" className={homeStyles.Skills_section}>
+        <div className={homeStyles.Skills_content}>
           <div className={globalStyles.SectionTitle_content}>
-            <h2 className={globalStyles.SectionTitle_title}>Skills</h2>
+            <h2
+              className={globalStyles.SectionTitle_title}
+              style={{ color: "#ffffff" }}
+            >
+              SKILLS
+            </h2>
           </div>
-          <div>
-            <h3>Language</h3>
-            <ul>
-              <li>TypeScript</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Frontend</h3>
-            <ul>
-              <li>React</li>
-              <li>React-Query</li>
-              <li>Vite</li>
-              <li>Styled-Components</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Database</h3>
-            <ul>
-              <li>Mongodb</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Tools & dev</h3>
-            <ul>
-              <li>Vercel</li>
-              <li>Github</li>
-            </ul>
+          <div className={homeStyles["Skills_skill-sets"]}>
+            <div className={homeStyles.Skills_skill_container}>
+              <div className={homeStyles.Skills_name}>
+                <h3>Language</h3>
+              </div>
+              <ul className={homeStyles.Skills_list}>
+                <li
+                  className={homeStyles.Skills_skill}
+                  style={{ backgroundColor: "#3178C6", color: "#ffffff" }}
+                >
+                  TypeScript
+                </li>
+                <li
+                  className={homeStyles.Skills_skill}
+                  style={{ backgroundColor: "#F7DF1E" }}
+                >
+                  JavaScript
+                </li>
+              </ul>
+            </div>
+            <div className={homeStyles.Skills_skill_container}>
+              <div className={homeStyles.Skills_name}>
+                <h3>Frontend</h3>
+              </div>
+              <ul className={homeStyles.Skills_list}>
+                <li
+                  className={homeStyles.Skills_skill}
+                  style={{ backgroundColor: "#61DAFB" }}
+                >
+                  React
+                </li>
+                <li
+                  className={homeStyles.Skills_skill}
+                  style={{ backgroundColor: "#FF4154", color: "#ffffff" }}
+                >
+                  React-Query
+                </li>
+                <li
+                  className={homeStyles.Skills_skill}
+                  style={{ backgroundColor: "#646CFF", color: "#ffffff" }}
+                >
+                  Vite
+                </li>
+                <li
+                  className={homeStyles.Skills_skill}
+                  style={{ backgroundColor: "#DB7093", color: "#ffffff" }}
+                >
+                  Styled-Components
+                </li>
+              </ul>
+            </div>
+            <div className={homeStyles.Skills_skill_container}>
+              <div className={homeStyles.Skills_name}>
+                <h3>Database</h3>
+              </div>
+              <ul className={homeStyles.Skills_list}>
+                <li
+                  className={homeStyles.Skills_skill}
+                  style={{ backgroundColor: "#47A248", color: "#ffffff" }}
+                >
+                  Mongodb
+                </li>
+              </ul>
+            </div>
+            <div className={homeStyles.Skills_skill_container}>
+              <div className={homeStyles.Skills_name}>
+                <h3>Tools&dev</h3>
+              </div>
+              <ul className={homeStyles.Skills_list}>
+                <li
+                  className={homeStyles.Skills_skill}
+                  style={{ backgroundColor: "#000000", color: "#ffffff" }}
+                >
+                  Vercel
+                </li>
+                <li
+                  className={homeStyles.Skills_skill}
+                  style={{ backgroundColor: "#181717", color: "#ffffff" }}
+                >
+                  Github
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -63,7 +123,7 @@ export const Home = () => {
       <section>
         <div>
           <div className={globalStyles.SectionTitle_content}>
-            <h2 className={globalStyles.SectionTitle_title}>Archiving</h2>
+            <h2 className={globalStyles.SectionTitle_title}>ARCHIVING</h2>
           </div>
           <div>
             <div>
@@ -83,7 +143,7 @@ export const Home = () => {
       <section>
         <div>
           <div className={globalStyles.SectionTitle_content}>
-            <h2 className={globalStyles.SectionTitle_title}>Projects</h2>
+            <h2 className={globalStyles.SectionTitle_title}>PROJECTS</h2>
           </div>
           <div>
             <h3>Project1</h3>
@@ -127,7 +187,7 @@ export const Home = () => {
       <section>
         <div>
           <div className={globalStyles.SectionTitle_content}>
-            <h2 className={globalStyles.SectionTitle_title}>Study</h2>
+            <h2 className={globalStyles.SectionTitle_title}>STUDY</h2>
           </div>
           <div>
             <h4>학습한거1</h4>
