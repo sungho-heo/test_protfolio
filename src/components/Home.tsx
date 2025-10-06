@@ -120,22 +120,21 @@ export const Home = () => {
         </div>
       </section>
       {/* Archiving */}
-      <section>
-        <div>
+      <section id="archving" className={homeStyles.Archving_section}>
+        <div className={homeStyles.Archiving_content}>
           <div className={globalStyles.SectionTitle_content}>
             <h2 className={globalStyles.SectionTitle_title}>ARCHIVING</h2>
           </div>
-          <div>
-            <div>
+          <div className={homeStyles.Archiving_archives}>
+            <a
+              className={homeStyles.Archiving_archive}
+              href="https://github.com/sungho-heo"
+              target="_blank"
+            >
+              <div className={homeStyles.Archiving_img}></div>
               <h3>Github</h3>
-            </div>
-            <div>
-              <p>
-                <a href="https://github.com/sungho-heo">
-                  github.com/sungho-heo
-                </a>
-              </p>
-            </div>
+              <p>코드 저장소</p>
+            </a>
           </div>
         </div>
       </section>

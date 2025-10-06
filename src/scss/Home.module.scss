@@ -81,3 +81,46 @@
   font-weight: 500;
   font-size: 1rem;
 }
+
+// archiving
+
+.Archving_section {
+  background-color: #1efe35;
+}
+
+.Archiving_content {
+  width: 100%;
+  max-width: 72rem;
+  padding: 4rem 1.5rem;
+  margin: 0 auto;
+}
+
+.Archiving_archives {
+  display: flex;
+  justify-self: center;
+  column-gap: 2rem;
+}
+
+.Archiving_archive {
+  width: 20rem;
+  padding: 2rem;
+  color: white;
+  background-color: #222222;
+  border-radius: 1.5rem;
+  text-decoration: none;
+}
+
+.Archiving_img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.Archiving_archives,
+.Archiving_archive {
+  transition: transform 0.45s ease; // 부드럽게 변화하도록
+}
+
+.Archiving_archives:hover,
+.Archiving_archive:hover {
+  transform: scale(1.04); // 살짝 커지는 효과
+}
