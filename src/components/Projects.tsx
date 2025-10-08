@@ -12,7 +12,7 @@ export const Projects = () => {
             <div className={styles["ProjectDetails_project-detail"]}>
               <h4 className={styles.ProjectsDetails_name}>1세대 포켓몬 도감</h4>
               <span className={styles["ProjectDetails_period"]}>
-                2024.05.20~2024.09.24(1인 프로젝트)
+                2024.05.20~2024.09.24 (1인 프로젝트)
               </span>
               <div className={styles.ProjectDetails_container}>
                 <h5 className={styles.ProjectDetails_title}>
@@ -34,9 +34,22 @@ export const Projects = () => {
                 </a>
               </div>
               <span className={styles["ProjectDetails_teach-stack"]}>
-                TypeScript,React,styled-css,github
+                TypeScript, React, styled-css, github
               </span>
-              <div></div>
+              <div className={styles["ProjectDetails_button-container"]}>
+                <button
+                  className={styles["ProjectDetails_readme-button"]}
+                  type="button"
+                >
+                  README
+                </button>
+                <button
+                  className={styles["ProjectDetails_image-button"]}
+                  type="button"
+                >
+                  PREVIEW
+                </button>
+              </div>
             </div>
             <div className={styles["ProjectDetails_project-detail"]}>
               <h4 className={styles.ProjectsDetails_name}>
@@ -52,6 +65,31 @@ export const Projects = () => {
                 <ul className={styles.ProjectDetails_summary}>
                   <li>프로젝트2 기능설명</li>
                 </ul>
+              </div>
+              <div className={styles.ProjectsDetails_url}>
+                <a
+                  href="https://sungho-heo.github.io/weather_tuto/"
+                  target="_blank"
+                >
+                  https://sungho-heo.github.io/weather_tuto/
+                </a>
+              </div>
+              <span className={styles["ProjectDetails_teach-stack"]}>
+                TypeScript, React, styled-css, github
+              </span>
+              <div className={styles["ProjectDetails_button-container"]}>
+                <button
+                  className={styles["ProjectDetails_readme-button"]}
+                  type="button"
+                >
+                  README
+                </button>
+                <button
+                  className={styles["ProjectDetails_image-button"]}
+                  type="button"
+                >
+                  PREVIEW
+                </button>
               </div>
             </div>
           </div>
