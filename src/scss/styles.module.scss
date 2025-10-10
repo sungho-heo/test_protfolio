@@ -183,6 +183,7 @@
   font-size: 3rem;
 }
 
+// tag
 li {
   display: list-item;
   text-align: -webkit-match-parent;
@@ -197,4 +198,9 @@ button {
   padding: 0;
   background-color: unset;
   border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }

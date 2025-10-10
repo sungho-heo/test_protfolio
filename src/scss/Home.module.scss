@@ -63,10 +63,10 @@
 
 .Archiving_archives,
 .Archiving_archive {
-  transition: transform 0.45s ease; // 부드럽게 변화하도록
+  transition: transform 0.2s ease; // 부드럽게 변화하도록
 }
 
 .Archiving_archives:hover,
 .Archiving_archive:hover {
-  transform: scale(1.04); // 살짝 커지는 효과
+  transform: scale(1.05); // 살짝 커지는 효과
 }

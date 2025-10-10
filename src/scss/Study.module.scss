@@ -1,0 +1,45 @@
+.Study_section {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 3rem;
+}
+
+.Studies_lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 0 10rem;
+}
+
+.StudyDetails_content {
+  position: relative;
+}
+
+.StudyDetails_card {
+  position: relative;
+  height: 100%;
+  padding: 0 1.75rem;
+  border: 1px solid #000000;
+  border-radius: 1rem;
+}
+
+.StudyDetails_title {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.StudyDetails_description {
+  margin-bottom: 1rem;
+}
+
+.StudyDetails_teach-stack {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.25rem 1rem;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  background-color: #d6fae6;
+}

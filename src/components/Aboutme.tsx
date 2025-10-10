@@ -19,7 +19,7 @@ export const Aboutme = () => {
                     이름
                   </label>
                   <br />
-                  <span>허성호</span>
+                  허성호
                 </div>
               </div>
             </div>
@@ -30,7 +30,7 @@ export const Aboutme = () => {
                     생년월일
                   </label>
                   <br />
-                  <span>98.08.10</span>
+                  98.08.10
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@ export const Aboutme = () => {
                     연락처
                   </label>
                   <br />
-                  <span>010-2319-4539</span>
+                  010-2319-4539
                 </div>
               </div>
             </div>
@@ -52,7 +52,7 @@ export const Aboutme = () => {
                     이메일
                   </label>
                   <br />
-                  <span>hurgj123kr@gmail.com</span>
+                  hurgj123kr@gmail.com
                 </div>
               </div>
             </div>

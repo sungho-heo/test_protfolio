@@ -3,6 +3,7 @@ import globalStyles from "../scss/styles.module.scss";
 import { Aboutme } from "./Aboutme";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
+import { Study } from "./Study";
 export const Home = () => {
   return (
     <>
@@ -48,22 +49,7 @@ export const Home = () => {
       {/* Projects */}
       <Projects />
       {/* Study */}
-      <section>
-        <div>
-          <div className={globalStyles.SectionTitle_content}>
-            <h2 className={globalStyles.SectionTitle_title}>STUDY</h2>
-          </div>
-          <div>
-            <h4>학습한거1</h4>
-            <div>
-              <h5>대표적으로 설명할 간단 설명1</h5>
-              <ul>
-                <li>학습설명 1</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Study />
     </>
   );
 };

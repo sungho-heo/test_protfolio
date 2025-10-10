@@ -11,9 +11,9 @@ export const Projects = () => {
           <div className={styles["ProjectDetails_project-details"]}>
             <div className={styles["ProjectDetails_project-detail"]}>
               <h4 className={styles.ProjectsDetails_name}>1세대 포켓몬 도감</h4>
-              <span className={styles["ProjectDetails_period"]}>
+              <div className={styles["ProjectDetails_period"]}>
                 2024.05.20~2024.09.24 (1인 프로젝트)
-              </span>
+              </div>
               <div className={styles.ProjectDetails_container}>
                 <h5 className={styles.ProjectDetails_title}>
                   1세대 포켓몬 정보를 빠르게 알기위한 포켓몬 도감
@@ -33,9 +33,9 @@ export const Projects = () => {
                   https://sungho-heo.github.io/poke2_front/
                 </a>
               </div>
-              <span className={styles["ProjectDetails_teach-stack"]}>
+              <div className={styles["ProjectDetails_teach-stack"]}>
                 TypeScript, React, styled-css, github
-              </span>
+              </div>
               <div className={styles["ProjectDetails_button-container"]}>
                 <button
                   className={styles["ProjectDetails_readme-button"]}
@@ -55,9 +55,9 @@ export const Projects = () => {
               <h4 className={styles.ProjectsDetails_name}>
                 날씨에 따라 옷차림 추천
               </h4>
-              <span className={styles["ProjectDetails_period"]}>
+              <div className={styles["ProjectDetails_period"]}>
                 2024.09.01~2024.12.21
-              </span>
+              </div>
               <div className={styles.ProjectDetails_container}>
                 <h5 className={styles.ProjectDetails_title}>
                   날씨와 온도에 따라 밖에 나갈옷을 추천해주는 날씨웹
@@ -74,9 +74,9 @@ export const Projects = () => {
                   https://sungho-heo.github.io/weather_tuto/
                 </a>
               </div>
-              <span className={styles["ProjectDetails_teach-stack"]}>
+              <div className={styles["ProjectDetails_teach-stack"]}>
                 TypeScript, React, styled-css, github
-              </span>
+              </div>
               <div className={styles["ProjectDetails_button-container"]}>
                 <button
                   className={styles["ProjectDetails_readme-button"]}
