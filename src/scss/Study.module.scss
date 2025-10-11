@@ -1,9 +1,11 @@
+// Section
 .Study_section {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 3rem;
 }
 
+// div ul감싼
 .Studies_lists {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -17,6 +19,7 @@
   position: relative;
 }
 
+// card 형태로 구성 study 각각.
 .StudyDetails_card {
   position: relative;
   height: 100%;
