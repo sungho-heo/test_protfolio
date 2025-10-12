@@ -28,7 +28,7 @@ export const Home = () => {
       {/* Skills */}
       <Skills />
       {/* Archiving */}
-      <section id="archving" className={homeStyles.Archving_section}>
+      <section id="archiving" className={homeStyles.Archving_section}>
         <div className={homeStyles.Archiving_content}>
           <div className={globalStyles.SectionTitle_content}>
             <h2 className={globalStyles.SectionTitle_title}>ARCHIVING</h2>

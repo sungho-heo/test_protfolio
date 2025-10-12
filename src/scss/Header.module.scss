@@ -20,7 +20,7 @@
 .Header_Title {
   font-size: 1.5rem;
   font-weight: 800;
-  color: blue;
+  line-height: 2rem;
 }
 
 .Header_navigation-menu {
@@ -28,7 +28,17 @@
 }
 
 .Header_menu-button {
-  padding: 0 0.75rem;
+  padding: 0 0.8rem;
   font-weight: 700;
   line-height: 2rem;
+}
+
+[type="button"]:not(:disabled) {
+  cursor: pointer;
+}
+
+[type="button"] {
+  appearance: button;
+
+  -webkit-appearance: button;
 }

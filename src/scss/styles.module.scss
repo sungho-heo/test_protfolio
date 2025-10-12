@@ -128,43 +128,6 @@
   --bs-form-invalid-border-color: #dc3545;
 }
 
-// Header
-
-.Header {
-  display: block;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
-  box-sizing: border-box;
-}
-
-.Header_Title_Container {
-  display: flex;
-  width: 100%;
-  max-width: 72rem;
-  height: 4.5rem;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 1.25rem 1.5rem;
-}
-
-.Header_Title {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: blue;
-}
-
-.Header_navigation-menu {
-  display: flex;
-}
-
-.Header_menu-button {
-  padding: 0 0.75rem;
-  font-weight: 700;
-  line-height: 2rem;
-}
-
 // Section_title
 
 .SectionTitle_content {
