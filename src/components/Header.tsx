@@ -1,9 +1,10 @@
 import styles from "../scss/Header.module.scss";
-export const Header = () => {
-  const scrollToSection = (id: string) => {
-    const section = document.getElementById(id);
-    section?.scrollIntoView({ behavior: "smooth" });
-  };
+
+type HeaderProps = {
+  scrollToSection: (id: string) => void;
+};
+
+export const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
   return (
     <header className={styles.Header}>
       <div id="header" className={styles.Header_Title_Container}>

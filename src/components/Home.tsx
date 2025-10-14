@@ -4,7 +4,13 @@ import { Aboutme } from "./Aboutme";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { Study } from "./Study";
-export const Home = () => {
+
+// type
+type HomeProps = {
+  scrollToSection: (id: string) => void;
+};
+
+export const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
   return (
     <>
       {/* 간단 자기소개 */}
@@ -50,6 +56,32 @@ export const Home = () => {
       <Projects />
       {/* Study */}
       <Study />
+      <div className={homeStyles.Remocon_content}>
+        <button
+          className={homeStyles.Remocon_button}
+          onClick={() => scrollToSection("about-me")}
+        >
+          Aboutme
+        </button>
+        <button
+          className={homeStyles.Remocon_button}
+          onClick={() => scrollToSection("skills")}
+        >
+          Skills{" "}
+        </button>
+        <button
+          className={homeStyles.Remocon_button}
+          onClick={() => scrollToSection("projects")}
+        >
+          Projects
+        </button>
+        <button
+          className={homeStyles.Remocon_button}
+          onClick={() => scrollToSection("study")}
+        >
+          Study
+        </button>
+      </div>
     </>
   );
 };
