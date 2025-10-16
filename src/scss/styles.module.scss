@@ -1,5 +1,6 @@
 // config
 @use "reset" as *;
+
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
@@ -74,8 +75,8 @@
     "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0)
+    hsla(0, 0%, 100%, 0.15),
+    hsla(0, 0%, 100%, 0)
   );
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;

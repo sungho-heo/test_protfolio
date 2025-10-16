@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../scss/Modal.module.scss";
+import { IoMdClose } from "react-icons/io";
 
 type ModalProps = {
   isOpen: boolean;
@@ -16,10 +17,17 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
           className={styles.Modal_content}
           onClick={(e) => e.stopPropagation()} // 내부 클릭시 닫히지 않게
         >
+          <div className={styles["Readme-header"]}>
+            <h2>README.MD</h2>
+            <button
+              type="button"
+              style={{ color: "white", fontSize: "2rem" }}
+              onClick={onClose}
+            >
+              <IoMdClose />
+            </button>
+          </div>
           {children}
-          <button type="button" onClick={onClose}>
-            닫기
-          </button>
         </div>
       </div>
     </>

@@ -14,6 +14,7 @@ type ProjectsProps = {
   tech: string;
   readme: string[];
 };
+
 // project내용
 const projectList: ProjectsProps[] = [
   {
@@ -23,11 +24,14 @@ const projectList: ProjectsProps[] = [
     url: "https://sungho-heo.github.io/poke2_front/",
     detailTitle: "1세대 포켓몬 정보를 빠르게 알기위한 포켓몬 도감",
     summary: ["포켓몬을 평소에 좋아해서 1세대 포켓몬정보를 정리하기위해 제작"],
-    tech: "TypeScript, React, styled-css, github",
+    tech: "TypeScript, React, styled-css, Mongodb",
     readme: [
       "TypeScript + React로 제작",
-      "Open API로 1세대 포켓몬 데이터 수집",
-      "검색 및 상세정보 기능 구현",
+      "2024.05.20~2024.09.24 (1인 프로젝트)",
+      "https://sungho-heo.github.io/poke2_front/",
+      "만든 계기 작성",
+      "만든 이유및 배운점",
+      "TypeScript, React, styled-css, github, Mongodb,Express",
     ],
   },
   {
@@ -36,12 +40,35 @@ const projectList: ProjectsProps[] = [
     period: "2024.09.01~2024.12.21",
     url: "https://sungho-heo.github.io/weather_tuto/",
     detailTitle: "날씨와 온도에 따라 밖에 나갈옷을 추천해주는 날씨웹",
-    summary: ["프로젝트2 기능설명"],
-    tech: "TypeScript, React, styled-css, github",
+    summary: [
+      "온도에따라 옷을 어떻게 입을지 고민하다가 제작하게 되었습니다.",
+      "Redux를 활용해 날씨데이터 상태값 관리",
+      "Rechart를 활용해 시간대별 온도값 그래프로 시각화",
+    ],
+    tech: "TypeScript, React, styled-css,github, Redux",
     readme: [
       "날씨 데이터를 기반으로 옷차림 추천",
-      "OpenWeather API 사용",
-      "반응형 웹 구현",
+      "2024.09.01~2024.12.21",
+      "만들게된 계기",
+      "만든 이유및 배운점",
+      "TypeScript, React, styled-css,Redux, github",
+    ],
+  },
+  {
+    id: 3,
+    title: "포트폴리오 웹사이트",
+    period: "2025.10 (1인 프로젝트)",
+    url: "",
+    detailTitle: "포트폴리오 사이트",
+    summary: ["저만의 포트폴리오 제작을위해서 개발"],
+    tech: "TypeScript, React, Sass, vercel",
+    readme: [
+      "포트폴리오 웹사이트",
+      "2025.10 (1인프로젝트)",
+      "url들어갈자리",
+      "만들게된 계기",
+      "만드는 이유 및 배운것",
+      "TypeScript, React, Sass, vercel",
     ],
   },
 ];
@@ -113,20 +140,20 @@ export const Projects = () => {
                 </div>
               </div>
             ))}
-            {/* 모달 */}
-            {isModalOpen && selectedProject && (
-              <Modal isOpen={isModalOpen} onClose={closeModal}>
-                <h2>{selectedProject.title} README</h2>
-                <ul>
-                  {selectedProject.readme.map((line, idx) => (
-                    <li key={idx}>{line}</li>
-                  ))}
-                </ul>
-              </Modal>
-            )}
           </div>
         </div>
       </section>
+      {/* 모달 */}
+      {isModalOpen && selectedProject && (
+        <Modal isOpen={isModalOpen} onClose={closeModal}>
+          <h2>{selectedProject.title} </h2>
+
+          <div className={styles["ProjectDetails_period"]}>
+            {selectedProject.period}
+          </div>
+          <p>{selectedProject.tech}</p>
+        </Modal>
+      )}
     </>
   );
 };
