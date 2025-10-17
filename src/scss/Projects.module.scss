@@ -108,22 +108,20 @@
   outline: none;
 }
 
-.modal_overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 어두운 배경 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999; /* 다른 요소 위로 */
+// modal detail
+.Modal_body {
+  position: relative;
+  flex: auto;
+  padding: 1rem;
 }
 
-.modal_content {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  min-width: 300px;
+.MarkDown_title {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #9a958e;
+}
+
+.MarkDown_period {
+  font-size: 0.85rem;
+  color: #999;
 }

@@ -146,12 +146,17 @@ export const Projects = () => {
       {/* 모달 */}
       {isModalOpen && selectedProject && (
         <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <h2>{selectedProject.title} </h2>
-
-          <div className={styles["ProjectDetails_period"]}>
-            {selectedProject.period}
+          <div className={styles.Modal_body}>
+            <div className={styles.Mardown_header} dir="auto">
+              <h1 className={styles.MarkDown_title} dir="auto">
+                {selectedProject.title}
+              </h1>
+            </div>
+            <div className={styles.MarkDown_period}>
+              {selectedProject.period}
+            </div>
+            <p>{selectedProject.tech}</p>
           </div>
-          <p>{selectedProject.tech}</p>
         </Modal>
       )}
     </>
