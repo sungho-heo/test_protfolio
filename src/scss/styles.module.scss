@@ -154,17 +154,13 @@ li {
   unicode-bidi: isolate;
 }
 
-ul {
-  list-style-type: none;
-}
-
 button {
   padding: 0;
   background-color: unset;
   border: none;
 }
 
-a {
-  color: inherit;
-  text-decoration: inherit;
+a:not([class]) {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  text-decoration: underline;
 }

@@ -112,13 +112,18 @@
 .Modal_body {
   position: relative;
   flex: auto;
-  padding: 1rem;
+  padding-left: 2rem;
 }
 
-.MarkDown_title {
+.MarkDown_header-title {
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #9a958e;
+}
+
+.MarkDown_header-text {
+  margin-bottom: 1.5rem;
+  font-weight: 800;
 }
 
 .MarkDown_period {

@@ -10,7 +10,8 @@
   inset: 0; // ✅ top, left, right, bottom 모두 0으로 대체
   background: rgba(0, 0, 0, 0.6);
   z-index: 1000;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .Modal_content {
