@@ -38,6 +38,11 @@
   margin-bottom: 1rem;
 }
 
+// teach-stack list
+ul.StudyDetails_teach-stack {
+  list-style-type: none;
+}
+
 .StudyDetails_teach-stack {
   display: flex;
   gap: 0.5rem;

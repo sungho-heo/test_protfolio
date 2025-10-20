@@ -108,7 +108,7 @@
   outline: none;
 }
 
-// modal detail
+// modal detail markdown
 .Modal_body {
   position: relative;
   flex: auto;
@@ -129,4 +129,8 @@
 .MarkDown_period {
   font-size: 0.85rem;
   color: #999;
+}
+
+.MarkDown_text {
+  padding: 0 1rem;
 }
