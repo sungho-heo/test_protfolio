@@ -56,32 +56,38 @@ export const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
       <Projects />
       {/* Study */}
       <Study />
-      <div className={homeStyles.Remocon_content}>
-        <button
-          className={homeStyles.Remocon_button}
-          onClick={() => scrollToSection("about-me")}
-        >
-          Aboutme
-        </button>
-        <button
-          className={homeStyles.Remocon_button}
-          onClick={() => scrollToSection("skills")}
-        >
-          Skills{" "}
-        </button>
-        <button
-          className={homeStyles.Remocon_button}
-          onClick={() => scrollToSection("projects")}
-        >
-          Projects
-        </button>
-        <button
-          className={homeStyles.Remocon_button}
-          onClick={() => scrollToSection("study")}
-        >
-          Study
-        </button>
-      </div>
+      <aside
+        id="default-sidebar"
+        className={homeStyles.Side_remocon}
+        aria-label="Sidebar"
+      >
+        <div className={homeStyles.Remocon_content}>
+          <button
+            className={homeStyles.Remocon_button}
+            onClick={() => scrollToSection("about-me")}
+          >
+            Aboutme
+          </button>
+          <button
+            className={homeStyles.Remocon_button}
+            onClick={() => scrollToSection("skills")}
+          >
+            Skills{" "}
+          </button>
+          <button
+            className={homeStyles.Remocon_button}
+            onClick={() => scrollToSection("projects")}
+          >
+            Projects
+          </button>
+          <button
+            className={homeStyles.Remocon_button}
+            onClick={() => scrollToSection("study")}
+          >
+            Study
+          </button>
+        </div>
+      </aside>
     </>
   );
 };
