@@ -3,9 +3,13 @@ import { HiOutlineMenu } from "react-icons/hi";
 
 type HeaderProps = {
   scrollToSection: (id: string) => void;
+  setShowSidebar: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
+export const Header: React.FC<HeaderProps> = ({
+  scrollToSection,
+  setShowSidebar,
+}) => {
   return (
     <header className={styles.Header}>
       <div id="header" className={styles.Header_Title_Container}>
@@ -54,7 +58,10 @@ export const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
             Study
           </button>
         </nav>
-        <div className={styles.Header_menu}>
+        <div
+          className={styles.Header_menu}
+          onMouseEnter={() => setShowSidebar(true)}
+        >
           <HiOutlineMenu className={styles["Header_menu-icon"]} />
         </div>
       </div>

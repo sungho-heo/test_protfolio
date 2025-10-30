@@ -8,11 +8,68 @@ import { Study } from "./Study";
 // type
 type HomeProps = {
   scrollToSection: (id: string) => void;
+  showSidebar: boolean;
+  setShowSidebar: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
+export const Home: React.FC<HomeProps> = ({
+  scrollToSection,
+  showSidebar,
+  setShowSidebar,
+}) => {
+  // 사이드바 숨기고 이동
+  const handleClick = (text: string) => {
+    setShowSidebar(false); // 먼저 사이드바 숨기기
+    setTimeout(() => {
+      scrollToSection(text);
+    }, 0); // 다음 렌더링 후 스크롤
+  };
   return (
     <>
+      {/* pageoverlay */}
+
+      {/* side바 */}
+      <aside
+        id="default-sidebar"
+        className={`${homeStyles.Side_sidebar} ${
+          showSidebar ? homeStyles.open : ""
+        }`}
+        onMouseEnter={() => setShowSidebar(true)}
+        onMouseLeave={() => setShowSidebar(false)}
+        aria-label="Sidebar"
+      >
+        <div
+          className={homeStyles.Sidebar_content}
+          onMouseLeave={() => setShowSidebar(false)} // Remocon 벗어나면 닫힘
+          onMouseEnter={() => setShowSidebar(true)}
+        >
+          <button
+            className={homeStyles.Sidebar_button}
+            onClick={() => handleClick("about-me")}
+          >
+            Aboutme
+          </button>
+          <button
+            className={homeStyles.Sidebar_button}
+            onClick={() => handleClick("skills")}
+          >
+            Skills
+          </button>
+          <button
+            className={homeStyles.Sidebar_button}
+            onClick={() => handleClick("projects")}
+          >
+            Projects
+          </button>
+          <button
+            className={homeStyles.Sidebar_button}
+            onClick={() => handleClick("study")}
+          >
+            Study
+          </button>
+        </div>
+      </aside>
+      {/* 기존의 컨텐츠 */}
       {/* 간단 자기소개 */}
       <div className={homeStyles.Centerhead_container}>
         <div className={homeStyles.Centerhead_content}>
@@ -56,38 +113,6 @@ export const Home: React.FC<HomeProps> = ({ scrollToSection }) => {
       <Projects />
       {/* Study */}
       <Study />
-      <aside
-        id="default-sidebar"
-        className={homeStyles.Side_remocon}
-        aria-label="Sidebar"
-      >
-        <div className={homeStyles.Remocon_content}>
-          <button
-            className={homeStyles.Remocon_button}
-            onClick={() => scrollToSection("about-me")}
-          >
-            Aboutme
-          </button>
-          <button
-            className={homeStyles.Remocon_button}
-            onClick={() => scrollToSection("skills")}
-          >
-            Skills{" "}
-          </button>
-          <button
-            className={homeStyles.Remocon_button}
-            onClick={() => scrollToSection("projects")}
-          >
-            Projects
-          </button>
-          <button
-            className={homeStyles.Remocon_button}
-            onClick={() => scrollToSection("study")}
-          >
-            Study
-          </button>
-        </div>
-      </aside>
     </>
   );
 };
