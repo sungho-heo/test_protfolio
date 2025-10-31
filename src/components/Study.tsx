@@ -13,10 +13,11 @@ type StudyProps = {
 const studyList: StudyProps[] = [
   {
     id: 1,
-    title: "Movie web",
-    url: "https://github.com/sungho-heo/movieweb",
-    description: "aaaa",
-    tech: ["Javascript"],
+    title: "Todo",
+    url: "https://github.com/sungho-heo/Todo",
+    description:
+      "사용자의 할일을 작성하기위한 웹사이트 할일 생성/삭제/조회 기능을 구현, 로그인,회원가입을 구현하여 사용자의 할일을 저장하도록함.",
+    tech: ["React, Express, Mongodb, Cloudtype ,Github-page"],
   },
   {
     id: 2,
@@ -52,9 +53,11 @@ export const Study = () => {
                   {study.description}
                 </p>
                 <div>
-                  <ul className={styles["StudyDetails_teach-stack"]}>
+                  <ul className={styles["StudyDetails_teach-stacks"]}>
                     {study.tech.map((text) => (
-                      <li>{text}</li>
+                      <li className={styles["StudyDetails_teach-stack"]}>
+                        <strong>{text}</strong>
+                      </li>
                     ))}
                   </ul>
                 </div>

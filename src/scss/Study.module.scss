@@ -36,16 +36,17 @@
 
 .StudyDetails_description {
   margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 // teach-stack list
-ul.StudyDetails_teach-stack {
+ul.StudyDetails_teach-stacks {
   list-style-type: none;
 }
 
-.StudyDetails_teach-stack {
+.StudyDetails_teach-stacks {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   padding: 0.25rem 1rem;
   border: 1px solid #000000;
   border-radius: 0.5rem;
