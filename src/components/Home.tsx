@@ -1,3 +1,4 @@
+import React from "react";
 import homeStyles from "../scss/Home.module.scss";
 import globalStyles from "../scss/styles.module.scss";
 import { Aboutme } from "./Aboutme";
@@ -26,49 +27,6 @@ export const Home: React.FC<HomeProps> = ({
   };
   return (
     <>
-      {/* pageoverlay */}
-
-      {/* side바 */}
-      <aside
-        id="default-sidebar"
-        className={`${homeStyles.Side_sidebar} ${
-          showSidebar ? homeStyles.open : ""
-        }`}
-        onMouseEnter={() => setShowSidebar(true)}
-        onMouseLeave={() => setShowSidebar(false)}
-        aria-label="Sidebar"
-      >
-        <div
-          className={homeStyles.Sidebar_content}
-          onMouseLeave={() => setShowSidebar(false)} // Remocon 벗어나면 닫힘
-          onMouseEnter={() => setShowSidebar(true)}
-        >
-          <button
-            className={homeStyles.Sidebar_button}
-            onClick={() => handleClick("about-me")}
-          >
-            Aboutme
-          </button>
-          <button
-            className={homeStyles.Sidebar_button}
-            onClick={() => handleClick("skills")}
-          >
-            Skills
-          </button>
-          <button
-            className={homeStyles.Sidebar_button}
-            onClick={() => handleClick("projects")}
-          >
-            Projects
-          </button>
-          <button
-            className={homeStyles.Sidebar_button}
-            onClick={() => handleClick("study")}
-          >
-            Study
-          </button>
-        </div>
-      </aside>
       {/* 기존의 컨텐츠 */}
       {/* 간단 자기소개 */}
       <div className={homeStyles.Centerhead_container}>
@@ -113,6 +71,47 @@ export const Home: React.FC<HomeProps> = ({
       <Projects />
       {/* Study */}
       <Study />
+      {/* side바 */}
+      <aside
+        id="default-sidebar"
+        className={`${homeStyles.Side_sidebar} ${
+          showSidebar ? homeStyles.open : ""
+        }`}
+        onMouseEnter={() => setShowSidebar(true)}
+        onMouseLeave={() => setShowSidebar(false)}
+        aria-label="Sidebar"
+      >
+        <div
+          className={homeStyles.Sidebar_content}
+          onMouseLeave={() => setShowSidebar(false)} // Remocon 벗어나면 닫힘
+          onMouseEnter={() => setShowSidebar(true)}
+        >
+          <button
+            className={homeStyles.Sidebar_button}
+            onClick={() => handleClick("about-me")}
+          >
+            Aboutme
+          </button>
+          <button
+            className={homeStyles.Sidebar_button}
+            onClick={() => handleClick("skills")}
+          >
+            Skills
+          </button>
+          <button
+            className={homeStyles.Sidebar_button}
+            onClick={() => handleClick("projects")}
+          >
+            Projects
+          </button>
+          <button
+            className={homeStyles.Sidebar_button}
+            onClick={() => handleClick("study")}
+          >
+            Study
+          </button>
+        </div>
+      </aside>
     </>
   );
 };

@@ -33,9 +33,12 @@ const studyList: StudyProps[] = [
   },
   {
     id: 3,
-    title: "이것저것",
-    url: "aa",
-    description: ["aaa2"],
+    title: "모멘텀 클론",
+    url: "https://github.com/sungho-heo/javascript-games",
+    description: [
+      "모멘텀을 참고하면서 만들게된 타이머 웹사이트입니다. 기본적으로 todo기능이 있으며, openweatherApi를 통해서 날씨값을 받아와서 위치별 날씨도 간단하게 표현해줍니다.",
+      "구현은 JS로만 구현을 하였습니다.",
+    ],
     tech: ["Javascript"],
   },
 ];
