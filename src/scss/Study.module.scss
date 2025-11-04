@@ -24,7 +24,7 @@
   position: relative;
   height: 100%;
   padding: 0 1.75rem;
-  border: 1px solid #000000;
+  border: 1px solid rgba(226, 232, 240, 0.2);
   border-radius: 1rem;
 }
 
@@ -32,6 +32,7 @@
   font-size: 1.25rem;
   line-height: 1.25rem;
   margin-bottom: 1rem;
+  color: #38bdf8;
 }
 
 .StudyDetails_description {
@@ -45,11 +46,13 @@ ul.StudyDetails_teach-stacks {
 }
 
 .StudyDetails_teach-stacks {
+  color: #0f172a;
   display: flex;
   gap: 1rem;
   font-size: 0.9rem;
   padding: 0.25rem 1rem;
-  border: 1px solid #000000;
+  border: 1px solid #e2e8f0;
   border-radius: 0.5rem;
   background-color: #d6fae6;
+  opacity: 0.8;
 }

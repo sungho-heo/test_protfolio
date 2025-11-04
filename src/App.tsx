@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./scss/styles.module.scss";
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 import { Footer } from "./components/Footer";
@@ -16,16 +17,18 @@ const App: React.FC = () => {
 
   return (
     <>
-      <Header
-        scrollToSection={scrollToSection}
-        setShowSidebar={setShowSidebar}
-      />
-      <Home
-        scrollToSection={scrollToSection}
-        showSidebar={showSidebar}
-        setShowSidebar={setShowSidebar}
-      />
-      <Footer />
+      <div className={styles.main_background}>
+        <Header
+          scrollToSection={scrollToSection}
+          setShowSidebar={setShowSidebar}
+        />
+        <Home
+          scrollToSection={scrollToSection}
+          showSidebar={showSidebar}
+          setShowSidebar={setShowSidebar}
+        />
+        <Footer />
+      </div>
     </>
   );
 };

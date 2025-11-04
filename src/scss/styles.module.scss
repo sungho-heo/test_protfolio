@@ -164,3 +164,9 @@ a:not([class]) {
   color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
   text-decoration: underline;
 }
+
+// background
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
