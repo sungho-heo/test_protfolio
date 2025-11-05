@@ -1,5 +1,5 @@
-import styles from "../scss/Study.module.scss";
-import globalStyles from "../scss/styles.module.scss";
+import styles from "../../scss/Study.module.scss";
+import globalStyles from "../../scss/styles.module.scss";
 
 // type
 type StudyProps = {

@@ -1,10 +1,10 @@
 import React from "react";
 import homeStyles from "../scss/Home.module.scss";
 import globalStyles from "../scss/styles.module.scss";
-import { Aboutme } from "./Aboutme";
-import { Skills } from "./Skills";
-import { Projects } from "./Projects";
-import { Study } from "./Study";
+import { Aboutme } from "./section/Aboutme";
+import { Skills } from "./section/Skills";
+import { Projects } from "./section/Projects";
+import { Study } from "./section/Study";
 
 // type
 type HomeProps = {

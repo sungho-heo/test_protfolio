@@ -1,5 +1,5 @@
-import aboutmeStyles from "../scss/Aboutme.module.scss";
-import globalStyles from "../scss/styles.module.scss";
+import aboutmeStyles from "../../scss/Aboutme.module.scss";
+import globalStyles from "../../scss/styles.module.scss";
 export const Aboutme = () => {
   return (
     <>

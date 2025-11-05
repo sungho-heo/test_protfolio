@@ -1,5 +1,5 @@
-import styles from "../scss/Skills.module.scss";
-import globalStyles from "../scss/styles.module.scss";
+import styles from "../../scss/Skills.module.scss";
+import globalStyles from "../../scss/styles.module.scss";
 export const Skills = () => {
   return (
     <>

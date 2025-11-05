@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { Modal } from "./Modal";
-import globalStyles from "../scss/styles.module.scss";
-import styles from "../scss/Projects.module.scss";
+import { Modal } from "../modal/Modal";
+import { ReadmeModalContent } from "../modal/ReadmeModalContent";
+import { PreviewModalContent } from "../modal/PreviewModalContent";
+import globalStyles from "../../scss/styles.module.scss";
+import styles from "../../scss/Projects.module.scss";
 
 // type
 type ProjectsProps = {
@@ -78,18 +80,19 @@ const projectList: ProjectsProps[] = [
 ];
 
 export const Projects = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalType, setModalType] = useState<"README" | "PREVIEW" | null>(null);
   const [selectedProject, setSelectedProject] = useState<ProjectsProps | null>(
     null
   );
 
-  const openModal = (project: ProjectsProps) => {
+  // readme preview modal 2가지
+  const openModal = (project: ProjectsProps, type: "README" | "PREVIEW") => {
     setSelectedProject(project);
-    setIsModalOpen(true);
+    setModalType(type);
   };
 
   const closeModal = () => {
-    setIsModalOpen(false);
+    setModalType(null);
     setSelectedProject(null);
   };
   return (
@@ -100,6 +103,7 @@ export const Projects = () => {
             <h2 className={globalStyles.SectionTitle_title}>PROJECTS</h2>
           </div>
           <div className={styles["ProjectDetails_project-details"]}>
+            {/* 프로젝트 리스트 */}
             {projectList.map((project) => (
               <div
                 key={project.id}
@@ -131,13 +135,14 @@ export const Projects = () => {
                   <button
                     className={styles["ProjectDetails_readme-button"]}
                     type="button"
-                    onClick={() => openModal(project)}
+                    onClick={() => openModal(project, "README")}
                   >
                     README
                   </button>
                   <button
                     className={styles["ProjectDetails_image-button"]}
                     type="button"
+                    onClick={() => openModal(project, "PREVIEW")}
                   >
                     PREVIEW
                   </button>
@@ -148,71 +153,17 @@ export const Projects = () => {
         </div>
       </section>
       {/* 모달 */}
-      {isModalOpen && selectedProject && (
-        <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <div className={styles.Modal_body}>
-            <div className={styles.Mardown_header} dir="auto">
-              <h1 className={styles["MarkDown_header-title"]} dir="auto">
-                {selectedProject.title}
-              </h1>
-            </div>
-            <div className={styles.MarkDown_period} dir="auto">
-              {selectedProject.period}
-            </div>
-            <div className={styles.Mardown_header} dir="auto">
-              <h2 className={styles["MarkDown_header-text"]} dir="auto">
-                🖇️ URL
-              </h2>
-            </div>
-            <p dir="auto">
-              <a href={selectedProject.url}>{selectedProject.url}</a>
-            </p>
-            <div className={styles.Mardown_header} dir="auto">
-              <h2 className={styles["MarkDown_header-text"]} dir="auto">
-                📝 Summary
-              </h2>
-            </div>
-            <p dir="auto">
-              <strong>{selectedProject.title}</strong>
-            </p>
-            <ul dir="auto">
-              {/* {projectList.map((project) => ( */}
-              {selectedProject.summary.map((text) => (
-                <li>{text}</li>
-              ))}
-            </ul>
-            <div className={styles.Mardown_header} dir="auto">
-              <h2 className={styles["MarkDown_header-text"]} dir="auto">
-                🤔 Why Develop?
-              </h2>
-            </div>
-            {selectedProject.why.map((text) => (
-              <p dir="auto" className={styles.MarkDown_text}>
-                {text}
-              </p>
-            ))}
-            <div className={styles.Mardown_header} dir="auto">
-              <h2 className={styles["MarkDown_header-text"]} dir="auto">
-                Meaning
-              </h2>
-            </div>
-            {selectedProject.meaning.map((means) => (
-              <p dir="auto" className={styles.MarkDown_text}>
-                {means}
-              </p>
-            ))}
-            <div className={styles.Mardown_header} dir="auto">
-              <h2 className={styles["MarkDown_header-text"]} dir="auto">
-                Teach Stack
-              </h2>
-            </div>
-            <p dir="auto">{selectedProject.tech}</p>
-            <div className={styles.Mardown_header} dir="auto">
-              <h2 className={styles["MarkDown_header-text"]} dir="auto">
-                Setup & Start
-              </h2>
-            </div>
-          </div>
+      {modalType && selectedProject && (
+        <Modal isOpen={true} onClose={closeModal}>
+          {/* readme click인지 preview인지 확인 */}
+          {modalType === "README" ? (
+            <ReadmeModalContent
+              project={selectedProject}
+              onClose={closeModal}
+            />
+          ) : (
+            <PreviewModalContent project={selectedProject} />
+          )}
         </Modal>
       )}
     </>
