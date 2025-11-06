@@ -16,6 +16,7 @@ type ProjectsProps = {
   why: string[];
   tech: string;
   meaning: string[];
+  images: string[];
 };
 
 // project내용
@@ -41,6 +42,7 @@ const projectList: ProjectsProps[] = [
       "프론트와 백엔드 데이터를 주고반는 과정이 있었는데 데이터가 넘어오는 것은 확인이 되나 화면에 해당 값이 보이지 않는 현상이 있었는데 백엔드에서 온 데이터값을 프론트에서 잘못된 키값을 사용하여 발생한 문제를 해결함으로써 데이터의 유무도 중요하지만 데이터의 구조와 해당 키값을 명확히 확인하는 점을 알게되었습니다.",
     ],
     tech: "TypeScript, React, styled-css, Mongodb",
+    images: ["/images/poke1.png"],
   },
   {
     id: 2,
@@ -61,6 +63,7 @@ const projectList: ProjectsProps[] = [
       "시간대별 날씨를 보여주기위해 카드식 구성을 사용하게되었습니다. 처음에 세로 스크롤로 밑으로 내리면서 구현을 했으나, 해당 웹의 특성을 죽이기에 가로스크롤로 구현을하게되었습니다.",
     ],
     tech: "TypeScript, React, styled-css,github, Redux",
+    images: [],
   },
   {
     id: 3,
@@ -76,6 +79,7 @@ const projectList: ProjectsProps[] = [
       "포트폴리오는 저 자자신을 짧은 시간에 보여줘야하기에 한눈에 보기좋고 많이 화려하지않고 깔끔한 디자인이 중요하다고 생각해서, 많은 레퍼런스를 통해서 한눈에 보기좋은 UI/UX를 개발하는 과정에서 디자인 역량도 기르게되었습니다.",
     ],
     tech: "TypeScript, React, Sass, vercel",
+    images: [],
   },
 ];
 
@@ -128,7 +132,7 @@ export const Projects = () => {
                     {project.url}
                   </a>
                 </div>
-                <div className={styles["ProjectDetails_teach-stack"]}>
+                <div className={styles["ProjectDetails_tech-stack"]}>
                   {project.tech}
                 </div>
                 <div className={styles["ProjectDetails_button-container"]}>

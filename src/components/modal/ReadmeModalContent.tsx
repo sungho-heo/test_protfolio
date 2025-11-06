@@ -1,14 +1,12 @@
 import { IoMdClose } from "react-icons/io";
 import { FaReadme } from "react-icons/fa6";
 import styles from "../../scss/Projects.module.scss";
-import modalStyles from "../../scss/Modal.module.scss";
+import modalStyles from "../../scss/modal/Modal.module.scss";
 
 type ReadmeModalProps = {
   project: {
-    id: number;
     title: string;
     period: string;
-    detailTitle: string;
     summary: string[];
     url: string;
     why: string[];
@@ -85,7 +83,7 @@ export const ReadmeModalContent = ({ project, onClose }: ReadmeModalProps) => {
         ))}
         <div className={styles.Mardown_header} dir="auto">
           <h2 className={styles["MarkDown_header-text"]} dir="auto">
-            Teach Stack
+            Tech Stack
           </h2>
         </div>
         <p dir="auto">{project.tech}</p>
