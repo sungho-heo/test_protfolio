@@ -42,7 +42,12 @@ const projectList: ProjectsProps[] = [
       "프론트와 백엔드 데이터를 주고반는 과정이 있었는데 데이터가 넘어오는 것은 확인이 되나 화면에 해당 값이 보이지 않는 현상이 있었는데 백엔드에서 온 데이터값을 프론트에서 잘못된 키값을 사용하여 발생한 문제를 해결함으로써 데이터의 유무도 중요하지만 데이터의 구조와 해당 키값을 명확히 확인하는 점을 알게되었습니다.",
     ],
     tech: "TypeScript, React, styled-css, Mongodb",
-    images: ["/images/poke1.png"],
+    images: [
+      "/images/poke1.png",
+      "/images/poke2.png",
+      "/images/poke3.png",
+      "/images/poke4.png",
+    ],
   },
   {
     id: 2,
@@ -158,7 +163,7 @@ export const Projects = () => {
       </section>
       {/* 모달 */}
       {modalType && selectedProject && (
-        <Modal isOpen={true} onClose={closeModal}>
+        <Modal isOpen={true} onClose={closeModal} modalType={modalType}>
           {/* readme click인지 preview인지 확인 */}
           {modalType === "README" ? (
             <ReadmeModalContent

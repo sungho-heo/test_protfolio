@@ -1,14 +1,21 @@
-.Carousel_images {
-  position: relative;
-}
-
-.Carousel_slider-content {
-  position: relative;
-}
-
-.Carousel_slider {
-  position: relative;
+.Preview_container {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.Preview_title {
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+.Preview_image {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* ✅ 비율 유지하며 전체 보여줌 */
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
 }
