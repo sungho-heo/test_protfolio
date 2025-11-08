@@ -43,10 +43,10 @@ const projectList: ProjectsProps[] = [
     ],
     tech: "TypeScript, React, styled-css, Mongodb",
     images: [
-      "/images/poke1.png",
-      "/images/poke2.png",
-      "/images/poke3.png",
-      "/images/poke4.png",
+      "/images/poke/poke1.png",
+      "/images/poke/poke2.png",
+      "/images/poke/poke3.png",
+      "/images/poke/poke4.png",
     ],
   },
   {
@@ -68,7 +68,12 @@ const projectList: ProjectsProps[] = [
       "시간대별 날씨를 보여주기위해 카드식 구성을 사용하게되었습니다. 처음에 세로 스크롤로 밑으로 내리면서 구현을 했으나, 해당 웹의 특성을 죽이기에 가로스크롤로 구현을하게되었습니다.",
     ],
     tech: "TypeScript, React, styled-css,github, Redux",
-    images: [],
+    images: [
+      "/images/weather/weather1.png",
+      "/images/weather/weather2.png",
+      "/images/weather/weather3.png",
+      "/images/weather/weather4.png",
+    ],
   },
   {
     id: 3,

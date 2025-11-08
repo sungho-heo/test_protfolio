@@ -3,7 +3,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-import projectStyles from "../../scss/Projects.module.scss";
 import styles from "../../scss/modal/Preview.module.scss";
 
 // prview type
