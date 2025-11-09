@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 import homeStyles from "../scss/Home.module.scss";
 import globalStyles from "../scss/styles.module.scss";
 import { Aboutme } from "./section/Aboutme";
@@ -60,9 +61,11 @@ export const Home: React.FC<HomeProps> = ({
               href="https://github.com/sungho-heo"
               target="_blank"
             >
-              <div className={homeStyles.Archiving_img}></div>
-              <h3>Github</h3>
-              <p>코드 저장소</p>
+              <div className={homeStyles.Archiving_img}>
+                <h2>
+                  <FaGithub /> Github
+                </h2>
+              </div>
             </a>
           </div>
         </div>

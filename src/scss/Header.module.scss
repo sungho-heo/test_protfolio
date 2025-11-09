@@ -23,6 +23,10 @@
   font-weight: 800;
   line-height: 2rem;
   color: #e2e8f0;
+  transition: color 0.3 ease-in;
+}
+.Header_Title:hover {
+  color: #8b5cf6;
 }
 
 .Header_navigation-menu {
@@ -34,6 +38,11 @@
   font-weight: 700;
   line-height: 2rem;
   color: #e2e8f0;
+  transition: color 0.3 ease-in;
+}
+
+.Header_nav-button:hover {
+  color: #8b5cf6;
 }
 
 [type="button"]:not(:disabled) {

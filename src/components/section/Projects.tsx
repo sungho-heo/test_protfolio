@@ -72,7 +72,6 @@ const projectList: ProjectsProps[] = [
       "/images/weather/weather1.png",
       "/images/weather/weather2.png",
       "/images/weather/weather3.png",
-      "/images/weather/weather4.png",
     ],
   },
   {

@@ -32,7 +32,8 @@
 // archiving
 
 .Archving_section {
-  background-color: #1efe35;
+  background-color: #313244;
+  // background-color: #1efe35;
 }
 
 .Archiving_content {
@@ -51,7 +52,7 @@
 .Archiving_archive {
   width: 20rem;
   padding: 2rem;
-  color: white;
+  color: #e2e8f0;
   background-color: #222222;
   border-radius: 1.5rem;
   text-decoration: none;
@@ -60,6 +61,8 @@
 .Archiving_img {
   width: 100%;
   margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .Archiving_archives,
@@ -105,4 +108,9 @@
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.Sidebar_button:hover {
+  color: #3b82f6;
 }
