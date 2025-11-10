@@ -146,14 +146,14 @@ export const Projects = () => {
                 </div>
                 <div className={styles["ProjectDetails_button-container"]}>
                   <button
-                    className={styles["ProjectDetails_readme-button"]}
+                    className={styles.ProjectDetails_button}
                     type="button"
                     onClick={() => openModal(project, "README")}
                   >
                     README
                   </button>
                   <button
-                    className={styles["ProjectDetails_image-button"]}
+                    className={styles.ProjectDetails_button}
                     type="button"
                     onClick={() => openModal(project, "PREVIEW")}
                   >

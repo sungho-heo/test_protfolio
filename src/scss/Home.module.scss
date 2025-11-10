@@ -30,10 +30,8 @@
 }
 
 // archiving
-
 .Archving_section {
-  background-color: #313244;
-  // background-color: #1efe35;
+  background-color: #1e1e2e; /* 더 깊은 남보라 계열 */
 }
 
 .Archiving_content {
@@ -41,6 +39,11 @@
   max-width: 72rem;
   padding: 4rem 1.5rem;
   margin: 0 auto;
+}
+
+.Archiving_content h2 {
+  color: #f1f5f9;
+  letter-spacing: 1px;
 }
 
 .Archiving_archives {
@@ -54,8 +57,17 @@
   padding: 2rem;
   color: #e2e8f0;
   background-color: #222222;
+  border: 1px solid rgba(59, 130, 246, 0.3); /* tailwind blue-500 투명 버전 */
+  box-shadow: rgba(255, 255, 255, 0.08) 0px 4px 12px;
   border-radius: 1.5rem;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.Archiving_archive:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(255, 255, 255, 0.15) 0px 6px 20px;
+  border-color: rgba(59, 130, 246, 0.6);
 }
 
 .Archiving_img {
@@ -63,16 +75,6 @@
   margin-bottom: 1rem;
   font-size: 2rem;
   text-align: center;
-}
-
-.Archiving_archives,
-.Archiving_archive {
-  transition: transform 0.2s ease; // 부드럽게 변화하도록
-}
-
-.Archiving_archives:hover,
-.Archiving_archive:hover {
-  transform: scale(1.05); // 살짝 커지는 효과
 }
 
 /* 사이드바 */
