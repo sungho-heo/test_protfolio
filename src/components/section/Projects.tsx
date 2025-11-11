@@ -167,7 +167,7 @@ export const Projects = () => {
       </section>
       {/* 모달 */}
       {modalType && selectedProject && (
-        <Modal isOpen={true} onClose={closeModal} modalType={modalType}>
+        <Modal isOpen={true} onClose={closeModal}>
           {/* readme click인지 preview인지 확인 */}
           {modalType === "README" ? (
             <ReadmeModalContent
