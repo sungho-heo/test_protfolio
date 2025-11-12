@@ -92,6 +92,17 @@ export const ReadmeModalContent = ({ project, onClose }: ReadmeModalProps) => {
             Setup & Start
           </h2>
         </div>
+        <div className={styles.MarkDown_setup}>
+          <pre>
+            <code>
+              {`# Install Javascript Packages
+npm install
+
+# Run Server
+npm run dev`}
+            </code>
+          </pre>
+        </div>
       </div>
     </>
   );

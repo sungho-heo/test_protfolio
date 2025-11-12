@@ -148,3 +148,14 @@
 .MarkDown_text {
   padding: 0 1rem;
 }
+
+.MarkDown_setup pre {
+  width: 90%;
+  font-family: "Fira Code", monospace;
+  background-color: #1e1e2e;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
