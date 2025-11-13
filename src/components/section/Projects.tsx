@@ -91,7 +91,14 @@ const projectList: ProjectsProps[] = [
       "포트폴리오는 저 자자신을 짧은 시간에 보여줘야하기에 한눈에 보기좋고 많이 화려하지않고 깔끔한 디자인이 중요하다고 생각해서, 많은 레퍼런스를 통해서 한눈에 보기좋은 UI/UX를 개발하는 과정에서 디자인 역량도 기르게되었습니다.",
     ],
     tech: "TypeScript, React, Sass, vercel",
-    images: [],
+    images: [
+      "/images/portfolio/portfolio1.png",
+      "/images/portfolio/portfolio2.png",
+      "/images/portfolio/portfolio3.png",
+      "/images/portfolio/portfolio4.png",
+      "/images/portfolio/portfolio5.png",
+      "/images/portfolio/portfolio6.png",
+    ],
   },
 ];
 

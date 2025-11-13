@@ -1,6 +1,4 @@
 // Aboutme
-.Aboutme_section_about {
-}
 
 .Aboutme_content {
   width: 100%;
@@ -17,12 +15,11 @@
 }
 
 .Aboutme_infos-list {
-  width: 50%;
+  width: 35%;
 }
 
 .Aboutme_info {
   display: flex;
-  flex-wrap: nowrap;
   width: 100%;
   max-width: 10rem;
   margin: 0 auto;
@@ -31,4 +28,16 @@
 .Aboutme_field-title {
   margin-bottom: 0.5rem;
   font-weight: 700;
+}
+
+.Aboutme_icon {
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+.Aboutme_text {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
 }
