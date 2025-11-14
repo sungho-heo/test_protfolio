@@ -14,6 +14,7 @@ type HomeProps = {
   setShowSidebar: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
+// Home
 export const Home: React.FC<HomeProps> = ({
   scrollToSection,
   showSidebar,
@@ -28,7 +29,6 @@ export const Home: React.FC<HomeProps> = ({
   };
   return (
     <>
-      {/* 기존의 컨텐츠 */}
       {/* 간단 자기소개 */}
       <div className={homeStyles.Centerhead_container}>
         <div className={homeStyles.Centerhead_content}>

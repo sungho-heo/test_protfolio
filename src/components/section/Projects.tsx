@@ -3,9 +3,9 @@ import { Modal } from "../modal/Modal";
 import { ReadmeModalContent } from "../modal/ReadmeModalContent";
 import { PreviewModalContent } from "../modal/PreviewModalContent";
 import globalStyles from "../../scss/styles.module.scss";
-import styles from "../../scss/Projects.module.scss";
+import styles from "../../scss/section/Projects.module.scss";
 
-// type
+// Project type
 type ProjectsProps = {
   id: number;
   title: string;
@@ -19,7 +19,7 @@ type ProjectsProps = {
   images: string[];
 };
 
-// project내용
+// projects 내용
 const projectList: ProjectsProps[] = [
   {
     id: 1,
@@ -114,6 +114,7 @@ export const Projects = () => {
     setModalType(type);
   };
 
+  // modal close
   const closeModal = () => {
     setModalType(null);
     setSelectedProject(null);

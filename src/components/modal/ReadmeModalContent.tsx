@@ -1,6 +1,6 @@
 import { IoMdClose } from "react-icons/io";
 import { FaReadme } from "react-icons/fa6";
-import styles from "../../scss/Projects.module.scss";
+import styles from "../../scss/section/Projects.module.scss";
 import modalStyles from "../../scss/modal/Modal.module.scss";
 
 type ReadmeModalProps = {

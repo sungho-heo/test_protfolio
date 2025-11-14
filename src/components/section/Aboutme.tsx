@@ -1,8 +1,10 @@
 import { FaUser, FaCalendar } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
-import aboutmeStyles from "../../scss/Aboutme.module.scss";
+import aboutmeStyles from "../../scss/section/Aboutme.module.scss";
 import globalStyles from "../../scss/styles.module.scss";
+
+// Aboutme
 export const Aboutme = () => {
   return (
     <>

@@ -1,4 +1,4 @@
-import styles from "../../scss/Study.module.scss";
+import styles from "../../scss/section/Study.module.scss";
 import globalStyles from "../../scss/styles.module.scss";
 
 // type

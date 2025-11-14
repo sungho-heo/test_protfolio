@@ -1,5 +1,7 @@
-import styles from "../../scss/Skills.module.scss";
+import styles from "../../scss/section/Skills.module.scss";
 import globalStyles from "../../scss/styles.module.scss";
+
+// Skills
 export const Skills = () => {
   return (
     <>
@@ -13,6 +15,7 @@ export const Skills = () => {
               SKILLS
             </h2>
           </div>
+          {/* Skills list */}
           <div className={styles["Skills_skill-sets"]}>
             <div className={styles.Skills_skill_container}>
               <div className={styles.Skills_name}>

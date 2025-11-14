@@ -1,11 +1,13 @@
 import styles from "../scss/Header.module.scss";
 import { HiOutlineMenu } from "react-icons/hi";
 
+// header type
 type HeaderProps = {
   scrollToSection: (id: string) => void;
   setShowSidebar: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
+// Header
 export const Header: React.FC<HeaderProps> = ({
   scrollToSection,
   setShowSidebar,

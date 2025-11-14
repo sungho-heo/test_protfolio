@@ -12,6 +12,7 @@ const App: React.FC = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   // 숨겨진 sidebar 출력
   const [showSidebar, setShowSidebar] = useState(false);
 
