@@ -1,73 +1,55 @@
-# React + TypeScript + Vite
+# Frontend Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## tech
 
-Currently, two official plugins are available:
+<img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"> 
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> 
+<img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=
+sass&logoColor=black"> 
+<img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## URL
 
-## React Compiler
+<a align="center" href="https://frontend-portfolio-wheat-nine.vercel.app/">
+  <img align="center" src="https://img.shields.io/badge/View%20The%20Portfolio-Click%20me-blue" alt="center">
+</a>
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### Screenshots from the Portfolio
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+#### Home Page
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<img aline="center" src="https://raw.githubusercontent.com/sungho-heo/Frontend_portfolio/main/public/images/portfolio/portfolio1.png" alt="screenshot">
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+#### Aboutme
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<img aline="center" src="https://raw.githubusercontent.com/sungho-heo/Frontend_portfolio/main/public/images/portfolio/portfolio2.png" alt="screenshot">
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#### Skills
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<img aline="center" src="https://raw.githubusercontent.com/sungho-heo/Frontend_portfolio/main/public/images/portfolio/portfolio3.png" alt="screenshot">
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+#### Archiving
+
+<img aline="center" src="https://raw.githubusercontent.com/sungho-heo/Frontend_portfolio/main/public/images/portfolio/portfolio4.png" alt="screenshot">
+
+#### Projects
+
+<img aline="center" src="https://raw.githubusercontent.com/sungho-heo/Frontend_portfolio/main/public/images/portfolio/portfolio5.png" alt="screenshot">
+
+#### Study
+
+<img aline="center" src="https://raw.githubusercontent.com/sungho-heo/Frontend_portfolio/main/public/images/portfolio/portfolio6.png" alt="screenshot">
+
+---
+
+### 🚀 Setup & Start
+
+```bash
+# Install Javascript Packages
+npm install
+
+# Run Server
+npm run dev
 ```
