@@ -73,3 +73,30 @@
   border: 1px solid;
   border-radius: 0.3rem;
 }
+
+/* 📱 mobile */
+
+@media (max-width: 768px) {
+  .Header_Title_Container {
+    padding: 1rem;
+    height: 3.5rem;
+  }
+
+  .Header_Title {
+    font-size: 1.2rem;
+  }
+
+  .Header_menu {
+    display: flex;
+    padding: 0.4rem 0.5rem;
+    font-size: 1.4rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    transform: none;
+  }
+
+  /* 메뉴가 햄버거에 가려지지 않도록 */
+  .Header_navigation-menu {
+    margin-right: 3rem;
+  }
+}

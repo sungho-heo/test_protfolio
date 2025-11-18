@@ -55,3 +55,37 @@ ul.Skills_list {
   font-weight: 500;
   font-size: 1rem;
 }
+
+// mobile
+@media (max-width: 768px) {
+  .Skills_content {
+    padding: 2rem 1rem; /* 패딩 축소 */
+  }
+
+  .Skills_skill-sets {
+    padding: 1.5rem;
+    row-gap: 1rem; /* 모바일에서 간격 줄임 */
+  }
+
+  .Skills_skill_container {
+    flex-direction: column; /* 모바일에서 세로 정렬 */
+    align-items: flex-start;
+    column-gap: 0;
+    row-gap: 1rem;
+  }
+
+  .Skills_name {
+    width: 100%; /* 모바일에서는 이름 전체 폭 사용 */
+    font-size: 0.9rem; /* 글자 축소 */
+    column-gap: 0.5rem;
+  }
+
+  .Skills_list {
+    gap: 0.4rem;
+  }
+
+  .Skills_skill {
+    font-size: 0.85rem; /* 글자 크기 축소 */
+    padding: 0.2rem 0.6rem; /* 패딩 축소 */
+  }
+}

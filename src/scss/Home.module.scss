@@ -116,3 +116,56 @@
 .Sidebar_button:hover {
   color: #3b82f6;
 }
+
+// mobile
+@media (max-width: 768px) {
+  /* Centerhead */
+  .Centerhead_title {
+    font-size: 2rem; /* 모바일에서 글자 축소 */
+    line-height: 1.2;
+  }
+
+  .Centerhead_description {
+    font-size: 1rem; /* 모바일에서 글자 축소 */
+    margin-bottom: 1.5rem;
+  }
+
+  .Centerhead_divide {
+    width: 2rem; /* 모바일에서 구분선 짧게 */
+  }
+
+  /* Archiving */
+  .Archiving_content {
+    padding: 2rem 1rem; /* 모바일 패딩 축소 */
+  }
+
+  .Archiving_archives {
+    flex-direction: column; /* 카드 세로 정렬 */
+    row-gap: 1.5rem; /* 세로 간격 */
+    column-gap: 0; /* 가로 간격 제거 */
+    align-items: center;
+  }
+
+  .Archiving_archive {
+    width: 90%; /* 모바일 폭에 맞게 */
+    padding: 1.5rem;
+  }
+
+  .Archiving_img {
+    font-size: 1.5rem;
+  }
+
+  /* Sidebar */
+  .Side_sidebar {
+    width: 80%; /* 모바일에서 사이드바 넓이 조정 */
+  }
+
+  .Sidebar_content {
+    padding: 1.5rem 1rem;
+  }
+
+  .Sidebar_button {
+    font-size: 1.3rem; /* 모바일에서 버튼 글자 축소 */
+    margin-bottom: 1rem;
+  }
+}

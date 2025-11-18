@@ -159,3 +159,98 @@
   overflow-x: auto;
   font-size: 0.9rem;
 }
+
+// mobile
+@media (max-width: 768px) {
+  /* 카드 컨테이너 */
+  .ProjectDetails_project-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between; /* 카드 사이 띄우기 */
+  }
+
+  /* 카드 자체 */
+  .ProjectDetails_project-detail {
+    width: 48%; /* 2열 유지 */
+    min-width: 180px; /* 최소 폭 확보 */
+    padding: 1rem;
+  }
+
+  /* 카드 내부 텍스트 */
+  .ProjectsDetails_name {
+    font-size: 0.9rem;
+    padding: 0.15rem 0.5rem;
+  }
+
+  .ProjectDetails_period {
+    font-size: 0.7rem;
+  }
+
+  .ProjectDetails_title {
+    font-size: 0.9rem;
+  }
+
+  .ProjectDetails_summary {
+    font-size: 0.85rem;
+    padding-left: 0.9rem;
+  }
+
+  /* 링크 길이 처리 */
+  .ProjectsDetails_url {
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+    word-break: break-word; /* 카드 밖으로 나가는 링크 방지 */
+    overflow-wrap: anywhere;
+  }
+
+  .ProjectDetails_tech-stack {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.4rem;
+    margin-top: 0.5rem;
+  }
+
+  .ProjectDetails_button-container {
+    gap: 0.3rem;
+  }
+
+  .ProjectDetails_button {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  /* modal markdown */
+  .Modal_body {
+    padding-left: 0.8rem;
+  }
+
+  .MarkDown_header-title {
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .MarkDown_header-text {
+    font-size: 0.9rem;
+  }
+
+  .MarkDown_period {
+    font-size: 0.7rem;
+  }
+
+  .MarkDown_text {
+    padding: 0 0.5rem;
+  }
+
+  .MarkDown_setup pre {
+    width: 100%;
+    font-size: 0.75rem;
+    padding: 0.6rem;
+  }
+}
+
+/* 화면이 더 좁으면 1열로 전환 */
+@media (max-width: 480px) {
+  .ProjectDetails_project-detail {
+    width: 100%; /* 1열로 변경 */
+  }
+}

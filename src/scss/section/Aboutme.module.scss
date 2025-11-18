@@ -41,3 +41,41 @@
   margin-top: 0.3rem;
   font-size: 0.9rem;
 }
+
+// mobile
+@media (max-width: 768px) {
+  .Aboutme_content {
+    padding: 2rem 1rem;
+  }
+
+  .Aboutme_infos {
+    flex-wrap: wrap; /* 줄바꿈 허용 */
+    justify-content: space-between; /* 좌우 여백 조절 */
+    row-gap: 1.5rem;
+  }
+
+  .Aboutme_infos-list {
+    width: 48%; /* 2열 */
+    margin-bottom: 1rem;
+  }
+
+  .Aboutme_info {
+    max-width: 100%;
+    margin: 0.5rem auto;
+  }
+
+  .Aboutme_field-title {
+    font-size: 1rem;
+  }
+
+  .Aboutme_icon {
+    font-size: 1.3rem;
+    margin-right: 0.8rem;
+    margin-top: 0.3rem;
+  }
+
+  .Aboutme_text {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+  }
+}
