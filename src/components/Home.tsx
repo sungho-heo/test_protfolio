@@ -82,12 +82,19 @@ export const Home: React.FC<HomeProps> = ({
         }`}
         onMouseEnter={() => setShowSidebar(true)}
         onMouseLeave={() => setShowSidebar(false)}
+        onTouchStart={(e) => {
+          // 사이드바 외부 터치 → 닫기
+          if (!e.currentTarget.contains(e.target as Node)) {
+            setShowSidebar(false);
+          }
+        }}
         aria-label="Sidebar"
       >
         <div
           className={homeStyles.Sidebar_content}
           onMouseLeave={() => setShowSidebar(false)} // Remocon 벗어나면 닫힘
           onMouseEnter={() => setShowSidebar(true)}
+          onTouchStart={(e) => e.stopPropagation()} // 내부 터치 시 닫히지 않게 처리
         >
           <button
             className={homeStyles.Sidebar_button}

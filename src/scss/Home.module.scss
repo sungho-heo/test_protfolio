@@ -119,7 +119,6 @@
 
 // mobile
 @media (max-width: 768px) {
-  /* Centerhead */
   .Centerhead_title {
     font-size: 2rem; /* 모바일에서 글자 축소 */
     line-height: 1.2;
@@ -141,8 +140,8 @@
 
   .Archiving_archives {
     flex-direction: column; /* 카드 세로 정렬 */
-    row-gap: 1.5rem; /* 세로 간격 */
-    column-gap: 0; /* 가로 간격 제거 */
+    row-gap: 1.5rem;
+    column-gap: 0;
     align-items: center;
   }
 
@@ -158,6 +157,10 @@
   /* Sidebar */
   .Side_sidebar {
     width: 80%; /* 모바일에서 사이드바 넓이 조정 */
+  }
+
+  .Side_sidebar.open {
+    transform: translateX(0);
   }
 
   .Sidebar_content {
